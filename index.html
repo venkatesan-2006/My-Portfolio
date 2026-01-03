@@ -1,182 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Venkatesan M | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venkatesan M | Portfolio</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css__style.css" />
-    <link rel="stylesheet" href="css_animations.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css__style.css">
+  <link rel="stylesheet" href="./css_animations.css">
 
-    <!-- Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <header class="navbar">
-        <div class="logo">Venkatesan<span> M</span></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<!-- ================= PRELOADER ================= -->
+<div id="preloader">
+  <div class="loader"></div>
+</div>
 
-        <!-- Theme Toggle -->
-        <button id="theme-toggle">
-            <i class="fas fa-moon"></i>
-        </button>
-    </header>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">Venkatesan<span> M</span></div>
 
-    <!-- ================= HERO ================= -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span>Venkatesan M</span></h1>
-            <h2>Biomedical Engineering Student | Frontend Developer | Java Developer</h2>
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-            <p>
-                Biomedical Engineering student focused on frontend development and
-                Java-based applications, building practical solutions for healthcare
-                and real-world problems.
-            </p>
+  <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+  <div id="menu-toggle"><i class="fas fa-bars"></i></div>
+</header>
 
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary">View Projects</a>
-                <a href="resume/Venkatesan_M_Resume.pdf" class="btn secondary" download>
-                    Download Resume
-                </a>
-            </div>
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span>Venkatesan M</span></h1>
+    <h2 id="typing"></h2>
 
-            <div class="social-links">
-                <a href="https://github.com/venkatesan-2006" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/venkatesan-mahalingam-60236a291" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://leetcode.com/u/Venkatesan_Mahalingam/" target="_blank"><i class="fas fa-code"></i></a>
-                <a href="https://www.instagram.com/venkatesan_mahalingam" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </section>
+    <p>
+      Biomedical Engineering student focused on frontend development and
+      Java-based applications, building practical solutions for healthcare
+      and real-world problems.
+    </p>
 
-    <!-- ================= ABOUT ================= -->
-    <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-        <p class="about-text">
-            I am a third-year Biomedical Engineering student at Karpagam Academy of Higher Education
-            with a strong interest in frontend and software development. I am actively learning modern
-            web technologies and Java-based application development while working on real-world and
-            academic projects. With a background in biomedical systems and software development,
-            I aim to build practical, user-focused solutions that connect healthcare and technology.
-        </p>
-    </section>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="./resume/Venkatesan_M_Resume.pdf" class="btn secondary" download>Download Resume</a>
+    </div>
 
-    <!-- ================= SKILLS ================= -->
-    <section id="skills" class="section">
-        <h2 class="section-title">Skills</h2>
+    <div class="social-links">
+      <a href="https://github.com/venkatesan-2006" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/venkatesan-mahalingam-60236a291" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://leetcode.com/u/Venkatesan_Mahalingam/" target="_blank"><i class="fas fa-code"></i></a>
+      <a href="https://www.instagram.com/venkatesan_mahalingam" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</section>
 
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Programming</h3>
-                <p>C, C++, Java, MySQL</p>
-            </div>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <h2 class="section-title">About Me</h2>
+  <p class="about-text">
+    I am a third-year Biomedical Engineering student at Karpagam Academy of Higher Education
+    with a strong interest in frontend and software development. I am actively learning modern
+    web technologies and Java-based application development while working on real-world and
+    academic projects.
+  </p>
+</section>
 
-            <div class="skill-card">
-                <h3>Web Technologies</h3>
-                <p>HTML, CSS, JavaScript</p>
-            </div>
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card"><h3>Programming</h3><p>C, C++, Java, MySQL</p></div>
+    <div class="skill-card"><h3>Web</h3><p>HTML, CSS, JavaScript</p></div>
+    <div class="skill-card"><h3>Tools</h3><p>GitHub, VS Code, Scilab</p></div>
+    <div class="skill-card"><h3>Soft Skills</h3><p>Problem Solving, Communication</p></div>
+  </div>
+</section>
 
-            <div class="skill-card">
-                <h3>Tools</h3>
-                <p>GitHub, VS Code, Scilab</p>
-            </div>
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
 
-            <div class="skill-card">
-                <h3>Soft Skills</h3>
-                <p>Problem Solving, Communication, Real-Time Analysis</p>
-            </div>
-        </div>
-    </section>
+  <div class="project-filters">
+    <button data-filter="all">All</button>
+    <button data-filter="embedded">Embedded</button>
+    <button data-filter="web">Web</button>
+  </div>
 
-    <!-- ================= PROJECTS ================= -->
-    <section id="projects" class="section">
-        <h2 class="section-title">Projects</h2>
+  <div class="project-card" data-category="embedded">
+    <h3>Autonomous Food Feeding System</h3>
+    <p>Arduino-based embedded system to assist elderly and disabled individuals using robotic mechanisms.</p>
+    <span>Arduino | Embedded C</span>
+  </div>
 
-        <div class="project-card">
-            <h3>Autonomous Food Feeding System</h3>
-            <p>
-                Embedded system designed to assist elderly and physically challenged individuals
-                using robotic hand movement and curvilinear motion controlled via Arduino.
-            </p>
-            <span>Arduino | Embedded C | Robotics</span>
-        </div>
+  <div class="project-card" data-category="web">
+    <h3>Healthcare Chatbot (RAG)</h3>
+    <p>Healthcare chatbot using retrieval-based concepts for contextual responses.</p>
+    <a href="https://github.com/venkatesan-2006/chatbot" target="_blank">GitHub</a>
+  </div>
 
-        <div class="project-card">
-            <h3>Healthcare Chatbot (RAG)</h3>
-            <p>
-                Healthcare chatbot using Retrieval-Augmented Generation concepts to provide
-                contextual responses for medical-related queries.
-            </p>
-            <a href="https://github.com/venkatesan-2006/chatbot" target="_blank">GitHub</a>
-        </div>
+  <div class="project-card" data-category="web">
+    <h3>Library Management System</h3>
+    <p>Web-based system for managing library records and interactions.</p>
+    <span>HTML | CSS | JavaScript</span>
+    <a href="https://github.com/venkatesan-2006/Library-Management" target="_blank">GitHub</a>
+  </div>
+</section>
 
-        <div class="project-card">
-            <h3>Library Management System</h3>
-            <p>
-                Web-based library management system with structured UI and interactive
-                functionalities for managing library data.
-            </p>
-            <span>HTML | CSS | JavaScript</span>
-            <a href="https://github.com/venkatesan-2006/Library-Management" target="_blank">GitHub</a>
-        </div>
-    </section>
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section">
+  <h2 class="section-title">Internships</h2>
+  <ul class="timeline">
+    <li><strong>Sri Sanjeevi Multispeciality Hospital</strong> – Junior Trainee Intern</li>
+    <li><strong>OM Medical System</strong> – Medical Equipment Internship</li>
+    <li><strong>ATS Accent Techno Soft</strong> – Python, Data Science & AI</li>
+  </ul>
+</section>
 
-    <!-- ================= EXPERIENCE ================= -->
-    <section id="experience" class="section">
-        <h2 class="section-title">Internships</h2>
+<!-- ================= CERTIFICATIONS ================= -->
+<section id="certifications" class="section">
+  <h2 class="section-title">Certifications & Awards</h2>
+  <ul class="cert-list">
+    <li><a href="https://www.hackerrank.com/certificates/faacf97d3b78" target="_blank"><u><i>SQL (Basic) – HackerRank</i></u></a></li>
+    <li><a href="https://www.hackerrank.com/certificates/717a30fc20d5" target="_blank"><u><i>CSS – HackerRank</i></u></a></li>
+    <li><a href="https://simpli-web.app.link/e/zmyJND5KAZb" target="_blank"><u><i>HTML – Simplilearn</i></u></a></li>
+    <li>🏆 First Prize – Robovision 2K25</li>
+  </ul>
+</section>
 
-        <ul class="timeline">
-            <li>
-                <h3>Sri Sanjeevi Multispeciality Hospital</h3>
-                <p>Junior Trainee Intern (June–July 2024)</p>
-            </li>
-            <li>
-                <h3>OM Medical System</h3>
-                <p>Intern (April–May 2025)</p>
-            </li>
-            <li>
-                <h3>ATS Accent Techno Soft</h3>
-                <p>Python with Data Science & AI Internship (Nov 2025)</p>
-            </li>
-        </ul>
-    </section>
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+  <h2 class="section-title">Contact</h2>
 
-    <!-- ================= CERTIFICATIONS ================= -->
-    <section id="certifications" class="section">
-        <h2 class="section-title">Certifications & Awards</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Message"></textarea>
+    <button class="btn primary">Send Message</button>
+    <p id="formMsg"></p>
+  </form>
+</section>
 
-        <ul class="cert-list">
-            <li><a href="https://www.hackerrank.com/certificates/faacf97d3b78" target="_blank"><u><i>SQL (Basic) – HackerRank</i></u></a></li>
-            <li><a href="https://www.hackerrank.com/certificates/717a30fc20d5" target="_blank"><u><i>CSS – HackerRank</u></i></a></li>
-            <li><a href="https://simpli-web.app.link/e/zmyJND5KAZb" target="_blank"><u><i>HTML – Simplilearn</u></i></a></li>
-            <li>🏆 First Prize – Robovision 2K25 (Karpagam Institute of Technology)</li>
-        </ul>
-    </section>
-
-    <!-- ================= CONTACT ================= -->
-    <section id="contact" class="section">
-        <h2 class="section-title">Contact</h2>
-        <p>Email: venkatesanmahalingam2006@gmail.com</p>
-        <p>Phone: 9843499459</p>
-    </section>
-
-    <script src="js_main.js"></script>
+<script src="./js_main.js"></script>
 </body>
 </html>
-
-
-
